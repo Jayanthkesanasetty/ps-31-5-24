@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre style="font-size: larger;">
+
+        1. Write a program to print true if the number is unique else print false if it contains duplicates
+
+        -------code-------
+
+        a=prompt("enter number: ")
+        b=[]
+        for(i=0;i< a.length;i++){
+        for(j=i+1;j< a.length;j++){
+            if(a[i]==a[j] &&  !b.includes(a[i])){
+                b.push(a[i])
+            }
+            }
+            }
+        if(b.length==0){
+            console.log("NO DUPS")
+            }
+        else{
+        console.log("true")
+        }
+
+        ------output-------
+        enter number: 522002
+                true
+
+
+        2.Write a program to print the below expression for the given number (Factorial)
+
+        ---------code---------
+        a=+prompt("ent num: ")
+        b=1;
+        c=""
+        for(i=a;i>1;i--){
+            b=b*i
+            c=c+i+"*"
+            }
+        console.log(c+1+"="+b)
+
+        ------output-------
+        ent num: 4
+        4*3*2*1=24
+    </pre>
+    <script>
+
+// a=prompt("enter number: ")
+// b=[]
+// for(i=0;i<a.length;i++){
+//     for(j=i+1;j<a.length;j++){
+//         if(a[i]==a[j] &&  !b.includes(a[i])){
+//             b.push(a[i])
+//         }
+       
+//     }
+// }
+// if(b.length==0){
+//             console.log("NO DUPS")
+//         }
+// else{
+//  console.log("true")
+// }
+// a=+prompt("ent num: ")
+// b=1;
+// c=""
+// for(i=a;i>1;i--){
+//     b=b*i
+//     c=c+i+"*"
+//     }
+// console.log(c+1+"="+b)
+    </script>
+</body>
+</html>
